@@ -1,5 +1,5 @@
 import { Avatar } from "@material-ui/core";
-import { AssignmentReturned, Home, Search } from "@material-ui/icons";
+import { AssignmentReturned, Create, Home, Search } from "@material-ui/icons";
 import React from "react";
 import "./Header.css";
 
@@ -7,7 +7,9 @@ const Navigation = () => {
   return (
     <div className="header">
       <div className="nav__logo">
-        <h3>ONLINE JOBS</h3>
+        <h3>
+          <Create /> ONLINE JOBS
+        </h3>
       </div>
 
       <div className="nav__search">

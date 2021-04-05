@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,QAAQ,CAAC;EACP,UAAU,EAAE,MAAM;EAClB,MAAM,EAAE,IAAI;CACb;;AACD,uCAAuC",
+    "sources": [
+        "SideProfile.scss"
+    ],
+    "names": [],
+    "file": "SideProfile.css"
+}
