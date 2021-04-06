@@ -1,4 +1,66 @@
 .task {
-  background-color: orange;
+  display: flex;
+  justify-content: center;
+  border-left: 1px solid #979797;
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  .task__card {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 80px;
+    width: 90%;
+    background-color: #0b1d6d2f;
+    height: 670px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    box-shadow: 1px 1px 3px 3px rgba(0, 0, 0, 0.055);
+    align-items: center;
+
+    h3 {
+      font-family: "Roboto Slab";
+      font-size: 20px;
+      width: 100%;
+      text-align: center;
+      border-bottom: 2px solid rgba(128, 128, 128, 0.63);
+      padding: 0.3em 0;
+    }
+
+    ul {
+      list-style: none;
+      width: 96%;
+      margin: 0;
+      padding: 0;
+      overflow: scroll;
+      // overflow-y: hidden; /* Hide vertical scroll  bar */
+      // overflow-x: hidden; /* Hide horizontal scrollbar */
+
+      .bg_green {
+        background-color: rgba(0, 158, 8, 0.377);
+      }
+      .bg_green:hover {
+        transform: scale(0.989);
+      }
+      .bg_red:hover {
+        transform: scale(0.989);
+      }
+      .bg_red {
+        background-color: rgba(226, 23, 23, 0.377);
+      }
+
+      li {
+        width: 95%;
+        background-color: white;
+        margin: 0.5em 0;
+        padding: 0.8em 0.3em;
+        font-size: 16px;
+        font-family: "Poppins";
+        cursor: pointer;
+      }
+    }
+  }
 }
+
 /*# sourceMappingURL=Tasks.css.map */

@@ -1,4 +1,81 @@
 .task {
-  background-color: orange;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-left: 1px solid #979797;
+}
+
+.task ::-webkit-scrollbar {
+  display: none;
+}
+
+.task .task__card {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 80px;
+  width: 90%;
+  background-color: #0b1d6d2f;
+  height: 670px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 8px;
+  -webkit-box-shadow: 1px 1px 3px 3px rgba(0, 0, 0, 0.055);
+          box-shadow: 1px 1px 3px 3px rgba(0, 0, 0, 0.055);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.task .task__card h3 {
+  font-family: "Roboto Slab";
+  font-size: 20px;
+  width: 100%;
+  text-align: center;
+  border-bottom: 2px solid rgba(128, 128, 128, 0.63);
+  padding: 0.3em 0;
+}
+
+.task .task__card ul {
+  list-style: none;
+  width: 96%;
+  margin: 0;
+  padding: 0;
+  overflow: scroll;
+}
+
+.task .task__card ul .bg_green {
+  background-color: rgba(0, 158, 8, 0.377);
+}
+
+.task .task__card ul .bg_green:hover {
+  -webkit-transform: scale(0.989);
+          transform: scale(0.989);
+}
+
+.task .task__card ul .bg_red:hover {
+  -webkit-transform: scale(0.989);
+          transform: scale(0.989);
+}
+
+.task .task__card ul .bg_red {
+  background-color: rgba(226, 23, 23, 0.377);
+}
+
+.task .task__card ul li {
+  width: 95%;
+  background-color: white;
+  margin: 0.5em 0;
+  padding: 0.8em 0.3em;
+  font-size: 16px;
+  font-family: "Poppins";
+  cursor: pointer;
 }
 /*# sourceMappingURL=SideTasks.css.map */

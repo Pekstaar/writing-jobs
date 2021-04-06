@@ -1,0 +1,126 @@
+.login {
+  width: 100%;
+  height: 100vh;
+  background-color: #05001b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.login .login__container {
+  width: 1200px;
+  background-image: url(../../img/writing.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  height: 100vh;
+}
+
+.login .login__container .login__cover {
+  width: 100%;
+  height: 100%;
+  background-color: #05001b9f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.login .login__container .login__cover .login__form {
+  width: 700px;
+  background: #05001bc5;
+  height: 500px;
+  padding: 1em 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.login .login__container .login__cover .login__form h2 {
+  margin: 1em;
+  color: white;
+  font-family: "Roboto Slab";
+  font-size: 32px;
+}
+
+.login .login__container .login__cover .login__form input {
+  margin: 2em;
+  height: 3em;
+  padding: 0 1em;
+  font-size: 16px;
+  outline: none;
+}
+
+.login .login__container .login__cover .login__form .manage {
+  color: white;
+  font-family: "Poppins";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 2.2em;
+  height: 50px;
+}
+
+.login .login__container .login__cover .login__form .manage .one {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.login .login__container .login__cover .login__form .manage a {
+  color: #7096e9;
+}
+
+.login .login__container .login__cover .login__form button {
+  padding: 0.7em;
+  width: 60%;
+  margin: 1.8em;
+  color: white;
+  font-size: 17px;
+  font-family: "Poppins";
+  text-transform: uppercase;
+  outline: none;
+  border: none;
+  background-image: -webkit-gradient(linear, left top, right top, from(#05001bdc), to(rgba(216, 8, 8, 0.801)));
+  background-image: linear-gradient(to right, #05001bdc, rgba(216, 8, 8, 0.801));
+  cursor: pointer;
+}
+
+.login .login__container .login__cover .login__form span {
+  margin: 0 2em;
+  font-family: "Poppins";
+  font-size: 17px;
+  color: white;
+}
+
+.login .login__container .login__cover .login__form span a {
+  color: #a0b6ff;
+}
+
+@media screen and (max-width: 700px) {
+  .login__form {
+    display: none;
+  }
+}
+/*# sourceMappingURL=Login.css.map */

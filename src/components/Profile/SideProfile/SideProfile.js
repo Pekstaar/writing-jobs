@@ -5,14 +5,29 @@ import "./SideProfile.css";
 const Profile = () => {
   return (
     <div className="profile">
-      <div className="profile__Card">
+      <div className="profile__card">
         <div className="upper__profile">
           <Avatar className="profile__image" />
+
+          <h3 className="profile__name">client-username</h3>
         </div>
 
-        <div className="profile__navigation"></div>
+        <ul className="profile__navigation">
+          <li className="profile__item">Profile</li>
 
-        <div className="profile__contact"></div>
+          <li className="profile__item">Account</li>
+
+          <li className="profile__item">Tasks</li>
+
+          <li className="profile__item">Payout</li>
+
+          <li className="profile__item">Logout</li>
+        </ul>
+        <div className="profile__contact">
+          useremail@gmail.com
+          <br />
+          +254 020 367 889
+        </div>
       </div>
     </div>
   );

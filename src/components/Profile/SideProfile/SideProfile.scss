@@ -1,5 +1,85 @@
 .profile {
-  background: orange;
-  height: 100%;
+  display: flex;
+  justify-content: center;
+  border-right: 1px solid #979797;
+
+  .profile__card {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 130px;
+    width: 90%;
+    background-color: #3636362f;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    box-shadow: 1px 1px 3px 3px rgba(0, 0, 0, 0.055);
+
+    .upper__profile {
+      position: relative;
+      width: 100%;
+      height: 20%;
+      // background-color: royalblue;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-bottom: 2px solid #979797;
+
+      .profile__image {
+        height: 90px;
+        width: 90px;
+        position: absolute;
+        align-self: center;
+        top: -45px;
+        cursor: pointer;
+      }
+
+      h3 {
+        color: #02060fb6;
+        position: absolute;
+        bottom: 10px;
+        font-family: "Roboto Slab";
+        font-size: 23px;
+      }
+    }
+  }
+  .profile__navigation {
+    height: 65%;
+    // background-color: blueviolet;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    .profile__item {
+      height: 2.8em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #13339298;
+      padding: 0 1em;
+      width: 80%;
+      text-transform: uppercase;
+      font-family: "Poppins";
+      font-size: 17px;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    .profile__item:hover {
+      transform: scale(0.955);
+      background-color: #133392c2;
+    }
+  }
+  .profile__contact {
+    width: 100%;
+    font-family: "Poppins";
+    font-size: 16px;
+    text-align: center;
+    color: #444444;
+  }
 }
-/*# sourceMappingURL=Profile.css.map */

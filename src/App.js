@@ -1,21 +1,15 @@
+import { Route, Router, Switch } from "react-router";
+import Home from "./pages/Home/Home";
 import "./App.css";
-import Feed from "./components/Feed/Feed";
-import Navigation from "./components/Navigation/Navigation";
-import Profile from "./components/Profile/SideProfile/SideProfile";
-import Tasks from "./components/Tasks/SideTasks/SideTasks";
+import Login from "./pages/Login/Login";
 
 function App() {
   return (
     <div className="App">
-      <Navigation />
-
-      <div className="bdy">
-        <Profile />
-
-        <Feed />
-
-        <Tasks />
-      </div>
+      <Switch>
+        <Route path="/" exact component={Home} />
+        <Route path="/Login" component={Login} />
+      </Switch>
     </div>
   );
 }

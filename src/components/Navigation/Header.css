@@ -9,15 +9,15 @@
   display: flex;
   /* flex-direction: row; */
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 50px;
   padding: 4px 1em;
   -webkit-box-shadow: 1px 1px 3px 3px rgba(0, 0, 0, 0.2);
-  box-shadow: 1px 1px 3px 3px rgba(0, 0, 0, 0.2);
+          box-shadow: 1px 1px 3px 3px rgba(0, 0, 0, 0.2);
   z-index: 2;
 }
 
@@ -65,11 +65,11 @@
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header .nav__icons .nav__profile {
@@ -77,8 +77,8 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-left: 0.8em;
 }
 

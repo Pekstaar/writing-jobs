@@ -8,7 +8,7 @@ const Navigation = () => {
     <div className="header">
       <div className="nav__logo">
         <h3>
-          <Create /> ONLINE JOBS
+          <Create /> WRITING
         </h3>
       </div>
 
