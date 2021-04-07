@@ -2,14 +2,17 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Login.css";
 
-const Login = () => {
+import { useAuth } from "../../components/auth";
+import { Home } from "@material-ui/icons";
+
+const Login = ({ history }) => {
   const initialvalues = {
     email: "",
     password: "",
   };
 
   const [values, setValues] = useState(initialvalues);
-  const [error, setError] = useState();
+  const { login } = useAuth();
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -20,14 +23,16 @@ const Login = () => {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
-    console.log(values);
-    setValues({
-      email: "",
-      password: "",
-    });
+    try {
+      await login(values.email, values.password);
+
+      history.push("/Dashboard");
+    } catch (e) {
+      console.error(e);
+    }
   };
 
   return (
@@ -35,11 +40,19 @@ const Login = () => {
       <div className="login__container">
         <div className="login__cover">
           <form action="" className="login__form" onSubmit={handleSubmit}>
-            <h2>LOGIN</h2>
+            <span className="head">
+              <h2>LOGIN</h2>
+              <Link className="link" to="/">
+                <Home className="home" />
+                HOME
+              </Link>
+            </span>
             <input
               type="text"
               name="email"
               placeholder="username@example.com"
+              autoFocus
+              required
               value={values.email}
               onChange={handleChange}
             />
@@ -47,6 +60,7 @@ const Login = () => {
             <input
               type="password"
               name="password"
+              required
               placeholder="Password"
               value={values.password}
               onChange={handleChange}
@@ -56,13 +70,13 @@ const Login = () => {
               <span className="one">
                 <input type="checkbox" name="remember" id="" /> remember me
               </span>
-              <Link to="/sign-up">Forgot Password?</Link>
+              <Link to="/Forgotpassword">Forgot Password?</Link>
             </div>
 
             <button type="submit">Login</button>
 
             <span>
-              Have no account? <Link to="/sign-up"> SIGN-UP</Link>
+              Have no account? <Link to="/Signup"> SIGN-UP</Link>
             </span>
           </form>
         </div>

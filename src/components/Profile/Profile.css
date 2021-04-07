@@ -1,5 +1,90 @@
-.profile {
-  background: orange;
+.main__profile {
   height: 100%;
+}
+
+.main__profile .MuiAppBar-root {
+  background-color: #05001b13;
+  z-index: 2;
+}
+
+.main__profile .MuiAppBar-root .MuiToolbar-root {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: white;
+}
+
+.main__profile .MuiAppBar-root .MuiToolbar-root .logo {
+  font-family: "Roboto Slab";
+  font-size: 21px;
+  color: #223ebe;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main__profile .MuiAppBar-root .MuiToolbar-root .nav__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 300px;
+}
+
+.main__profile .MuiAppBar-root .MuiToolbar-root .nav__items a {
+  color: #223ebe;
+}
+
+.main__profile .MuiAppBar-root .MuiToolbar-root .nav__items a .icon {
+  font-size: 25px;
+}
+
+.main__profile .profile__container {
+  background: #05001b13;
+}
+
+.main__profile .profile__container .profile__image {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.main__profile .profile__container .MuiInputBase-root {
+  border-radius: 0;
+  background: #06002015;
+  color: #444444;
+}
+
+.main__profile .profile__container .MuiFilledInput-underline:before {
+  border: none;
+}
+
+.main__profile .profile__container .MuiFilledInput-underline:after {
+  border-bottom: 1px solid #000364;
+}
+
+@media (min-width: 720px) {
+  .main__profile .MuiAppBar-root .MuiToolbar-root .logo {
+    width: 40%;
+  }
+  .main__profile .MuiAppBar-root .MuiToolbar-root .ul {
+    width: 500px;
+  }
+}
+
+.me {
+  color: #020f3894;
 }
 /*# sourceMappingURL=Profile.css.map */

@@ -28,18 +28,45 @@
         padding: 1em 1em;
         display: flex;
         flex-direction: column;
+        .head {
+          display: flex;
+          width: 80%;
+          justify-content: space-between;
+          align-items: center;
 
-        h2 {
-          margin: 1em;
-          color: white;
-          font-family: "Roboto Slab";
-          font-size: 32px;
+          h2 {
+            margin: 1em;
+            color: white;
+            font-family: "Roboto Slab";
+            font-size: 32px;
+          }
+
+          .link {
+            display: flex;
+            align-items: flex-end;
+            gap: 0.5em;
+            color: wheat;
+            text-decoration: none;
+
+            .home {
+              font-size: 30px;
+              cursor: pointer;
+              color: wheat;
+            }
+          }
+          .link:hover {
+            color: rgba(67, 99, 189, 0.685);
+
+            .home {
+              color: rgba(67, 99, 189, 0.685);
+            }
+          }
         }
 
         input {
-          margin: 2em;
-          height: 3em;
+          margin: 1.2em 3em;
           padding: 0 1em;
+          height: 3em;
           font-size: 16px;
           outline: none;
         }
@@ -95,14 +122,52 @@
     }
   }
 }
-@media screen and (max-width: 700px) {
-  //   .login__container,
-  //   .login__cover {
-  //     width: 100%;
-  //   }
 
-  .login__form {
-    display: none;
-    // width: 95%;
+// @media screen 720px
+$breakpoint-tablet: 720px;
+@media (max-width: $breakpoint-tablet) {
+  .login {
+    .login__container {
+      .login__cover {
+        .login__form {
+          width: 99%;
+
+          .head {
+            h2 {
+              font-size: 22px;
+            }
+
+            .link {
+              font-size: 16px;
+
+              .home {
+                font-size: 25px;
+              }
+            }
+          }
+
+          input {
+            margin-left: 0;
+            margin-right: 0;
+          }
+
+          .manage {
+            width: 100%;
+            .one {
+              margin: 0;
+            }
+
+            input {
+              margin-right: 5px;
+            }
+          }
+
+          button {
+            padding: 0.5em;
+            align-self: center;
+          }
+        }
+      }
+    }
   }
 }

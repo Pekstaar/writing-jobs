@@ -1,1 +1,210 @@
-/* No CSS *//*# sourceMappingURL=SignUp.css.map */
+.signup {
+  width: 100%;
+  height: 100vh;
+  background-color: #05001b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.signup .signup__container {
+  width: 1200px;
+  background-image: url(../../img/writing.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  height: 100vh;
+}
+
+.signup .signup__container .signup__cover {
+  width: 100%;
+  height: 100%;
+  background-color: #05001b9f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.signup .signup__container .signup__cover .signup__form {
+  width: 700px;
+  background: #05001bc5;
+  min-height: 500px;
+  padding: 1em 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.signup .signup__container .signup__cover .signup__form .head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.signup .signup__container .signup__cover .signup__form .head h2 {
+  margin: 1em;
+  color: white;
+  font-family: "Roboto Slab";
+  font-size: 32px;
+}
+
+.signup .signup__container .signup__cover .signup__form .head .link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  gap: 0.5em;
+  color: wheat;
+  text-decoration: none;
+}
+
+.signup .signup__container .signup__cover .signup__form .head .link .home {
+  font-size: 30px;
+  cursor: pointer;
+  color: wheat;
+}
+
+.signup .signup__container .signup__cover .signup__form .head .link:hover {
+  color: rgba(67, 99, 189, 0.685);
+}
+
+.signup .signup__container .signup__cover .signup__form .head .link:hover .home {
+  color: rgba(67, 99, 189, 0.685);
+}
+
+.signup .signup__container .signup__cover .signup__form input {
+  margin: 1.7em;
+  height: 3em;
+  padding: 0 1em;
+  font-size: 16px;
+  outline: none;
+  width: 85%;
+}
+
+.signup .signup__container .signup__cover .signup__form .manage {
+  color: white;
+  font-family: "Poppins";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 2.2em;
+  height: 50px;
+  width: 68%;
+}
+
+.signup .signup__container .signup__cover .signup__form .manage input {
+  margin: 0;
+  width: 2.5em;
+  height: 1em;
+  padding: 0;
+}
+
+.signup .signup__container .signup__cover .signup__form .manage .one {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.signup .signup__container .signup__cover .signup__form .manage a {
+  color: #7096e9;
+}
+
+.signup .signup__container .signup__cover .signup__form button {
+  padding: 0.7em;
+  width: 60%;
+  margin: 1em 1.8em;
+  color: white;
+  font-size: 17px;
+  font-family: "Poppins";
+  text-transform: uppercase;
+  outline: none;
+  border: none;
+  background-image: -webkit-gradient(linear, left top, right top, from(#05001bdc), to(rgba(216, 8, 8, 0.801)));
+  background-image: linear-gradient(to right, #05001bdc, rgba(216, 8, 8, 0.801));
+  cursor: pointer;
+}
+
+.signup .signup__container .signup__cover .signup__form span {
+  margin: 0 2em;
+  font-family: "Poppins";
+  font-size: 17px;
+  color: white;
+}
+
+.signup .signup__container .signup__cover .signup__form span a {
+  color: #a0b6ff;
+}
+
+@media (max-width: 720px) {
+  .signup .signup__container .signup__cover .signup__form {
+    width: 99%;
+    padding-right: 0.4em;
+    padding-left: 0.4em;
+  }
+  .signup .signup__container .signup__cover .signup__form .head h2 {
+    font-size: 22px;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+  .signup .signup__container .signup__cover .signup__form .head .link {
+    font-size: 16px;
+  }
+  .signup .signup__container .signup__cover .signup__form .head .link .home {
+    font-size: 25px;
+  }
+  .signup .signup__container .signup__cover .signup__form input {
+    margin: 20px 0;
+    width: 100%;
+  }
+  .signup .signup__container .signup__cover .signup__form .manage {
+    width: 90%;
+  }
+  .signup .signup__container .signup__cover .signup__form .manage .one {
+    margin: 0;
+  }
+  .signup .signup__container .signup__cover .signup__form .manage input {
+    margin-right: 5px;
+  }
+  .signup .signup__container .signup__cover .signup__form button {
+    padding: 0.5em;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
+/*# sourceMappingURL=SignUp.css.map */

@@ -48,17 +48,56 @@
           flex-direction: column;
 }
 
-.login .login__container .login__cover .login__form h2 {
+.login .login__container .login__cover .login__form .head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.login .login__container .login__cover .login__form .head h2 {
   margin: 1em;
   color: white;
   font-family: "Roboto Slab";
   font-size: 32px;
 }
 
+.login .login__container .login__cover .login__form .head .link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  gap: 0.5em;
+  color: wheat;
+  text-decoration: none;
+}
+
+.login .login__container .login__cover .login__form .head .link .home {
+  font-size: 30px;
+  cursor: pointer;
+  color: wheat;
+}
+
+.login .login__container .login__cover .login__form .head .link:hover {
+  color: rgba(67, 99, 189, 0.685);
+}
+
+.login .login__container .login__cover .login__form .head .link:hover .home {
+  color: rgba(67, 99, 189, 0.685);
+}
+
 .login .login__container .login__cover .login__form input {
-  margin: 2em;
-  height: 3em;
+  margin: 1.2em 3em;
   padding: 0 1em;
+  height: 3em;
   font-size: 16px;
   outline: none;
 }
@@ -118,9 +157,37 @@
   color: #a0b6ff;
 }
 
-@media screen and (max-width: 700px) {
-  .login__form {
-    display: none;
+@media (max-width: 720px) {
+  .login .login__container .login__cover .login__form {
+    width: 99%;
+  }
+  .login .login__container .login__cover .login__form .head h2 {
+    font-size: 22px;
+  }
+  .login .login__container .login__cover .login__form .head .link {
+    font-size: 16px;
+  }
+  .login .login__container .login__cover .login__form .head .link .home {
+    font-size: 25px;
+  }
+  .login .login__container .login__cover .login__form input {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .login .login__container .login__cover .login__form .manage {
+    width: 100%;
+  }
+  .login .login__container .login__cover .login__form .manage .one {
+    margin: 0;
+  }
+  .login .login__container .login__cover .login__form .manage input {
+    margin-right: 5px;
+  }
+  .login .login__container .login__cover .login__form button {
+    padding: 0.5em;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
 }
 /*# sourceMappingURL=Login.css.map */

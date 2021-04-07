@@ -1,0 +1,157 @@
+.welcome {
+  width: 100%;
+  height: 100vh;
+  background-color: #05001b;
+
+  /* Using SCSS variables to store breakpoints */
+
+  .MuiAppBar-root {
+    background-color: #05001bbd;
+    position: sticky;
+    top: 0;
+
+    .MuiToolbar-root {
+      justify-content: space-between;
+      color: white;
+
+      .logo {
+        font-family: "Roboto Slab";
+        text-transform: uppercase;
+        font-size: 21px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .buttons {
+          .btn {
+            // margin: 0 1em;
+            color: #cacaca;
+            transition: ease-in-out 0.3s;
+          }
+
+          .btn:hover {
+            border-radius: 0;
+            border-bottom: 2px solid white;
+          }
+        }
+      }
+
+      .nav__items {
+        display: flex;
+        align-items: center;
+
+        justify-content: space-around;
+
+        .active {
+          border-bottom: 2px solid white;
+        }
+
+        .nav__item {
+          cursor: pointer;
+          // margin: 0.5em 2em;
+          padding: 0 0.2em;
+          text-transform: uppercase;
+          font-family: "Varela Round";
+        }
+      }
+    }
+  }
+
+  .welcome__container {
+    height: 100%;
+    background: url("../../img/writing.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 0;
+
+    .wrap {
+      height: 100%;
+      // width: 100%;
+      background: #05001be1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      h1,
+      p {
+        font-family: "Varela Round";
+        color: #d6d6d6;
+      }
+
+      h1 {
+        font-size: 40px;
+      }
+
+      p {
+        font-size: 21px;
+      }
+
+      a {
+        padding: 0.8em 3.8em;
+        font-family: "Poppins";
+        font-size: 20px;
+        border-radius: 4px;
+        cursor: pointer;
+        background: linear-gradient(to right, #ac2f2ff3, #05001bee);
+        color: #d6d6d6;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+$breakpoint-tablet: 768px;
+@media (min-width: $breakpoint-tablet) {
+  .welcome {
+    .logo {
+      width: 60%;
+      height: 40px;
+
+      .btn {
+        font-size: 18px;
+      }
+    }
+
+    .nav__items {
+      width: 30%;
+    }
+  }
+}
+@media (max-width: $breakpoint-tablet) {
+  .welcome {
+    .MuiToolbar-root {
+      flex-direction: column;
+
+      .logo {
+        width: 100%;
+        align-self: flex-start;
+
+        .buttons {
+          .btn {
+            font-size: 15px;
+          }
+        }
+      }
+      .nav__items {
+        width: 100%;
+        padding: 1em 0;
+      }
+    }
+    .welcome__container {
+      .wrap {
+        text-align: center;
+        h1 {
+          font-size: 30px;
+        }
+        p {
+          font-size: 18px;
+        }
+        a {
+          padding: 0.5em 2.5em;
+        }
+      }
+    }
+  }
+}

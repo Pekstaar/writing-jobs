@@ -1,0 +1,195 @@
+.signup {
+  width: 100%;
+  height: 100vh;
+  background-color: #05001b;
+  display: flex;
+  justify-content: center;
+
+  .signup__container {
+    width: 1200px;
+    background-image: url(../../img/writing.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 100vh;
+
+    .signup__cover {
+      width: 100%;
+      height: 100%;
+      background-color: #05001b9f;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .signup__form {
+        width: 700px;
+        background: #05001bc5;
+        min-height: 500px;
+        padding: 1em 1em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .head {
+          display: flex;
+          width: 80%;
+          justify-content: space-between;
+          align-items: center;
+
+          h2 {
+            margin: 1em;
+            color: white;
+            font-family: "Roboto Slab";
+            font-size: 32px;
+          }
+
+          .link {
+            display: flex;
+            align-items: flex-end;
+            gap: 0.5em;
+            color: wheat;
+            text-decoration: none;
+
+            .home {
+              font-size: 30px;
+              cursor: pointer;
+              color: wheat;
+            }
+          }
+          .link:hover {
+            color: rgba(67, 99, 189, 0.685);
+
+            .home {
+              color: rgba(67, 99, 189, 0.685);
+            }
+          }
+        }
+
+        // h2 {
+        //   margin: 0.7em;
+        //   color: white;
+        //   font-family: "Roboto Slab";
+        //   font-size: 32px;
+        // }
+
+        input {
+          margin: 1.7em;
+          height: 3em;
+          padding: 0 1em;
+          font-size: 16px;
+          outline: none;
+          width: 85%;
+        }
+
+        .manage {
+          color: white;
+          font-family: "Poppins";
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-right: 2.2em;
+          height: 50px;
+          width: 68%;
+
+          input {
+            margin: 0;
+            width: 2.5em;
+            height: 1em;
+            padding: 0;
+          }
+
+          .one {
+            display: flex;
+            align-items: center;
+            width: 100%;
+          }
+
+          a {
+            color: rgb(112, 150, 233);
+          }
+        }
+
+        button {
+          padding: 0.7em;
+          width: 60%;
+          margin: 1em 1.8em;
+          color: white;
+          font-size: 17px;
+          font-family: "Poppins";
+          text-transform: uppercase;
+          outline: none;
+          border: none;
+          background-image: linear-gradient(
+            to right,
+            #05001bdc,
+            rgba(216, 8, 8, 0.801)
+          );
+          cursor: pointer;
+        }
+
+        span {
+          margin: 0 2em;
+          font-family: "Poppins";
+          font-size: 17px;
+          color: white;
+
+          a {
+            color: #a0b6ff;
+          }
+        }
+      }
+    }
+  }
+}
+
+$breakpoint-tablet: 720px;
+@media (max-width: $breakpoint-tablet) {
+  .signup {
+    .signup__container {
+      .signup__cover {
+        .signup__form {
+          width: 99%;
+          padding-right: 0.4em;
+          padding-left: 0.4em;
+
+          .head {
+            h2 {
+              font-size: 22px;
+              margin-top: 0.5em;
+              margin-bottom: 0.5em;
+            }
+
+            .link {
+              font-size: 16px;
+
+              .home {
+                font-size: 25px;
+              }
+            }
+          }
+
+          input {
+            margin: 20px 0;
+            width: 100%;
+          }
+
+          .manage {
+            width: 90%;
+            .one {
+              margin: 0;
+            }
+
+            input {
+              margin-right: 5px;
+            }
+          }
+
+          button {
+            padding: 0.5em;
+            align-self: center;
+          }
+        }
+      }
+    }
+  }
+}

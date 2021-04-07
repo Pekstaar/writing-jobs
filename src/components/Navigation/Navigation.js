@@ -2,12 +2,13 @@ import { Avatar } from "@material-ui/core";
 import { AssignmentReturned, Create, Home, Search } from "@material-ui/icons";
 import React from "react";
 import "./Header.css";
+import firebase from "../../firebase";
 
 const Navigation = () => {
   return (
     <div className="header">
       <div className="nav__logo">
-        <h3>
+        <h3 style={{ fontSize: "21px" }}>
           <Create /> WRITING
         </h3>
       </div>
@@ -25,7 +26,7 @@ const Navigation = () => {
 
         <div className="nav__profile">
           <Avatar className="avatar" />
-          <h5>username@gmail.com</h5>
+          <h5>{firebase.auth().currentUser.email}</h5>
         </div>
       </div>
     </div>

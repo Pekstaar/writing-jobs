@@ -66,8 +66,9 @@
       text-transform: uppercase;
       font-family: "Poppins";
       font-size: 17px;
-      color: #fff;
+      color: #fff !important;
       cursor: pointer;
+      text-decoration: none;
     }
 
     .profile__item:hover {
