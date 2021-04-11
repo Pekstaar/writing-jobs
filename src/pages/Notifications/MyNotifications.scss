@@ -1,0 +1,81 @@
+.main__profile {
+  //   // background: orange;
+  //   height: 100%;
+
+  //   .MuiAppBar-root {
+  //     background-color: #05001b13;
+  //     z-index: 2;
+
+  //     .MuiToolbar-root {
+  //       justify-content: space-between;
+  //       color: white;
+
+  //       .logo {
+  //         font-family: "Roboto Slab";
+  //         font-size: 21px;
+  //         color: #223ebe;
+  //         display: flex;
+  //         justify-content: space-between;
+  //       }
+
+  //       .nav__items {
+  //         display: flex;
+  //         justify-content: space-around;
+  //         align-items: center;
+  //         width: 300px;
+
+  //         a {
+  //           color: #223ebe;
+
+  //           .icon {
+  //             font-size: 25px;
+  //           }
+  //         }
+  //       }
+  //     }
+  //   }
+
+  .notifications__container {
+    background: #05001b13;
+
+    .notification_head {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      border-bottom: 1px solid #969595;
+      padding: 0.4em 0;
+    }
+
+    .MuiInputBase-root {
+      border-radius: 0;
+      background: #06002015;
+      color: #444444;
+    }
+
+    .MuiFilledInput-underline:before {
+      border: none;
+    }
+    .MuiFilledInput-underline:after {
+      border-bottom: 1px solid #000364;
+    }
+  }
+}
+
+$screenbreakpoint: 720px;
+@media (max-width: $screenbreakpoint) {
+}
+@media (min-width: $screenbreakpoint) {
+  .main__profile {
+    .MuiAppBar-root {
+      .MuiToolbar-root {
+        .logo {
+          width: 40%;
+        }
+
+        .ul {
+          width: 500px;
+        }
+      }
+    }
+  }
+}

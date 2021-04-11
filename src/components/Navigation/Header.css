@@ -1,106 +1,76 @@
-:root {
-  --color: #133392;
-  --bg-grey: #dbdbdb;
-}
-
-.header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  /* flex-direction: row; */
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 50px;
-  padding: 4px 1em;
-  -webkit-box-shadow: 1px 1px 3px 3px rgba(0, 0, 0, 0.2);
-          box-shadow: 1px 1px 3px 3px rgba(0, 0, 0, 0.2);
+.MuiAppBar-root {
+  background-color: #05001b13;
   z-index: 2;
 }
 
-.header .nav__logo {
-  font-family: "Roboto Slab";
-  color: var(--color);
+.MuiAppBar-root .MuiToolbar-root {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: white;
 }
 
-.header .nav__search {
+.MuiAppBar-root .MuiToolbar-root .logo {
+  font-family: "Roboto Slab";
+  font-size: 21px;
+  color: #223ebe;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 70%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.MuiAppBar-root .MuiToolbar-root .nav__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 300px;
+}
+
+.MuiAppBar-root .MuiToolbar-root .nav__items a {
+  color: #223ebe;
+}
+
+.MuiAppBar-root .MuiToolbar-root .nav__items a .icon {
+  font-size: 25px;
+}
+
+.nav__search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 35px;
   width: 40%;
 }
 
-.header .nav__search .search__input {
-  height: 90%;
+.nav__search .search__input {
+  height: 35px;
   outline: none;
   border: none;
   border-radius: 1em 0 0 1em;
   width: 100%;
   padding-left: 1em;
-  font-size: 16px;
-  background-color: var(--bg-grey);
+  font-size: 17px;
+  background-color: white;
 }
 
-.header .nav__search .search__icon {
-  width: 30px;
-  padding: 0 0.4em;
-  background-color: var(--bg-grey);
-  height: 33px;
-  border-radius: 0 1em 1em 0;
-  color: var(--color);
+.nav__search .search__icon {
+  height: 35px;
+  width: 35px;
+  color: #05001b;
+  font-size: 30px;
+  padding: 4px;
 }
 
-.header .nav__search .search__icon:hover {
+.nav__search .search__icon:hover {
   cursor: pointer;
   color: black;
-}
-
-.header .nav__icons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.header .nav__icons .nav__profile {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-left: 0.8em;
-}
-
-.header .nav__icons .nav__profile .avatar {
-  height: 40px;
-  width: 40px;
-  cursor: pointer;
-}
-
-.header .nav__icons .nav__profile h5 {
-  margin-left: 0.5em;
-  font-family: "Roboto Slab";
-  font-weight: normal;
-  font-size: 14px;
-  color: #061122;
-  cursor: pointer;
-}
-
-.header .nav__icons .nav__icon {
-  margin: 0 0.8em;
-  color: var(--color);
-  font-size: 25px;
-  cursor: pointer;
 }
 /*# sourceMappingURL=Header.css.map */

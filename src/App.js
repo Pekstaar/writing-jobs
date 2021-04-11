@@ -7,6 +7,7 @@ import Login from "./pages/Login/Login";
 import Signup from "./pages/SignUp/SignUp";
 import ForgotPassword from "./pages/ForgotPassword/ForgotPassword";
 import Welcome from "./pages/Welcome/Welcome";
+import Notifications from "./pages/Notifications/MyNotifications";
 
 import { NotificationContainer } from "react-notifications";
 import { AuthProvider } from "./components/auth";

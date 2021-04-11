@@ -18,12 +18,13 @@ import {
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { useAuth } from "../auth";
+import Navigation from "../Navigation/Navigation";
 import "./Profile.css";
 
 const Profile = ({ history }) => {
   const initialValues = {
     username: "Mary Wangari",
-    email: "njerimary@gmail.com",
+    email: "wangarimary@gmail.com",
     contact: "+254 020 290 3445",
     skills: "Html, Css, Word, TypeScripting",
     description:
@@ -38,43 +39,7 @@ const Profile = ({ history }) => {
 
   return (
     <div className="main__profile">
-      <AppBar position="static">
-        <Toolbar>
-          <div className="logo">
-            <span>
-              <Create /> Writing
-            </span>
-            {/*  */}
-          </div>
-
-          {/* Navigation icons */}
-          <ul className="nav__items">
-            <Link to="/Dashboard" className="nav__item active">
-              <Home className="icon" />
-            </Link>
-
-            <Link>
-              <Work className="icon" />
-            </Link>
-            <Link>
-              <Notifications className="icon" />
-            </Link>
-            <span>
-              <Avatar className="nav__item" />
-            </span>
-            <Link
-              className="nav__item"
-              onClick={async () => {
-                await logout()
-                  .then(() => history.push("/"))
-                  .catch((e) => console.log(e.message));
-              }}
-            >
-              <ExitToApp className="icon" /> Logout
-            </Link>
-          </ul>
-        </Toolbar>
-      </AppBar>
+      <Navigation />
 
       <Container maxWidth="md" className="profile__container">
         <Grid style={{ padding: "2em 2em" }} className="bg" container>

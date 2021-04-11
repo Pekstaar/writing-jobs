@@ -51,14 +51,15 @@
 }
 
 .main__profile .profile__container .profile__image {
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  position: relative;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .main__profile .profile__container .MuiInputBase-root {
@@ -82,9 +83,5 @@
   .main__profile .MuiAppBar-root .MuiToolbar-root .ul {
     width: 500px;
   }
-}
-
-.me {
-  color: #020f3894;
 }
 /*# sourceMappingURL=Profile.css.map */
